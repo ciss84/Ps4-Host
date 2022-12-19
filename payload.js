@@ -32,7 +32,7 @@ function load_exploit(){
 function load_exploit_done(){
     document.getElementById('notify').style.display = ''
     document.getElementById('notify').className = 'notification'
-    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Jailbreak Loaded !!!</h1>'; }, 50);   
+    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Unplug Usb Now...Jailbreak Done !!!</h1>'; }, 50);   
     setTimeout(loadHomeBrew, 100);
 }
 
@@ -40,13 +40,6 @@ function load_usb(){
     document.getElementById('notify').style.display = ''
     document.getElementById('notify').className = 'notification'
     setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Insert Usb Now !!!</h1>'; }, 50);   
-    setTimeout(ani2, 4000);  
-}
-
-function load_usb_done(){
-    document.getElementById('notify').style.display = ''
-    document.getElementById('notify').className = 'notification'
-    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Unplug Usb Now !!!</h1>'; }, 50);   
     setTimeout(ani2, 4000);  
 }
 
