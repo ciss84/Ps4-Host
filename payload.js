@@ -55,8 +55,8 @@ function loadHomeBrew() {
 function load_usb(){
     document.getElementById('notify').style.display = ''
     document.getElementById('notify').className = 'notification'
-    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Insert Usb Now !!!...</h1>'; }, 5000);
-    setTimeout(function(){document.getElementById("log").innerHTML="<h1 style=color:#ebfa89>Unplug Usb Now !!!</h1>"; }, 1000);
+    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Insert Usb Now !!!...</h1>'; }, 3000);
+    setTimeout(function(){document.getElementById("log").innerHTML="<h1 style=color:#ebfa89>Unplug Usb Now !!!...</h1>"; }, 3000);
     setTimeout(ani2, 6000);
 }       
 
