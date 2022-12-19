@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+<body>
+<script>
+window.applicationCache.oncached=function(){window.location.reload();};
+window.applicationCache.onnoupdate=function(){window.location.replace('http://esp32-s2-sgk/index.html');};
+window.applicationCache.onerror=function(){window.location.replace('http://esp32-s2-sgk/index.html');};
+</script>
+</body>
+</html>
