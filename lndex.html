@@ -230,7 +230,7 @@ input:checked + .slider .off
 <script src="rop.js"></script>
 <script src="kexploit.js"></script>
 <script src="webkit.js"></script>
-<body onload="load_exploit()">
+<body onload="load_exploit(); load()">
 <div id="jb-progress">
     <div id="notify" style="display: ;">
         <img src="./hen.png" alt="" width="100px" height="100px">
@@ -273,7 +273,7 @@ input:checked + .slider .off
 <button style='font-size:20px;text-align:center;color:#FFFFFF' class="pointer" onclick=load_linux4gbp() onmouseover="msgs2.innerHTML='Load Linux Pro 4GB VRAM'" ; onmouseout="msgs2.innerHTML='∆❍X❑'" type="button"><B> Linux 4GB P</B></button></a>
 <br>
 <button style="margin-top:15px;background-color:#781f1f;border-radius:50px;" onclick=load_bin() type="button">
-FW- <span id="PS4fw"></span></button>
+FW- <span id="PS4fw"></span><br>Ps4- <span id="onlineCheckResult"></span></button>
 <br><br>
 <div class="about2" style='margin-right:75px'><a href="theme.html" target="_blank" rel="noopener noreferrer"><button id = "enter" style='font-size:20px;text-align:center;color:#FFFFFF' class="pointer" onMouseOver="msgs2.innerHTML='Change Wallpaper'" ; onmouseout="msgs2.innerHTML='∆❍X❑'" type="button"><B>Themes</B></button></a></div>
 <br><br>
@@ -360,6 +360,24 @@ PS4fw.innerHTML=""+UA+" Binloader";
       autopl();
     }
   }
+</script>
+<script>
+function load() {
+    onlineChk();sysinfo()
+}
+
+function onlineChk() {
+    var check = navigator.onLine
+    if (check == true) {
+        document.getElementById("onlineCheckResult").innerHTML = "Online"
+    }else {
+        document.getElementById("onlineCheckResult").innerHTML = "Offline"
+    }
+}
+
+function sysinfo() {
+    document.getElementById("sysinfo").innerHTML = navigator.userAgent
+}
 </script>
 </body>
 </html>
