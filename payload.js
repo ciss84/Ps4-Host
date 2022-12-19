@@ -36,6 +36,18 @@ function load_exploit_done(){
     setTimeout(loadHomeBrew, 100);
 }
 
+function load_usb(){
+    document.getElementById('notify').style.display = ''
+    document.getElementById('notify').className = 'notification'
+    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Insert Usb Now !!!</h1>'; }, 50);   
+}
+
+function load_usb_done(){
+    document.getElementById('notify').style.display = ''
+    document.getElementById('notify').className = 'notification'
+    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Unplug Usb Now !!!</h1>'; }, 50);   
+}
+
 // Added AutoHEN
 function loadHomeBrew() {
     var firstscheck = localStorage.getItem("CheckBOX1")
