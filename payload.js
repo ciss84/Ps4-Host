@@ -65,14 +65,14 @@ runBinLoader();
 }
 
 function load_platinum(){
-LoadedMSG="PlatinumHen-U v2.5 B5 Loaded !!!";
+LoadedMSG="PlatinumHen-U v2.5 B6 Loaded !!!";
 PLfile = "henplatinum2.bin";
 toogle_payload();
 }
 
 function load_goldhen2b2(){
-LoadedMSG="GoldHEN v2.2.5b8 Loaded !!!";
-PLfile = "goldhen_2.2.5b6.bin";
+LoadedMSG="GoldHEN v2.3 Loaded !!!";
+PLfile = "goldhen_2.3.bin";
 toogle_payload();
 }
 
