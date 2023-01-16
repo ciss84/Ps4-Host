@@ -286,7 +286,8 @@ FW- <span id="PS4fw"></span><br>Ps4- <span id="onlineCheckResult"></span></butto
 UA=navigator.userAgent.substring(navigator.userAgent.indexOf("6.72 (") + 28,navigator.userAgent.indexOf(") Apple"));
 if (UA=="layStation 4/9.00")UA="9.00";
 if (UA=="layStation 4/9.50")UA="9.50";
-if (UA!="9.00" && UA!="9.50")alert("This Is For PS4 FW9.00 Only!");
+if (UA=="layStation 4/10.01")UA="10.01";	
+if (UA!="9.00" && UA!="9.50" && UA!="10.01")alert("This Is For PS4 FW9.00 Only!");
 PS4fw.innerHTML=""+UA+" Binloader";
 </script>
 
